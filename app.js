@@ -8,7 +8,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req,res){
-    res.send("Hello World!");
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.listen(3000, function(){
